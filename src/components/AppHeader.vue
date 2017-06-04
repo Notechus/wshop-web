@@ -15,8 +15,9 @@
                         <li><a href="#" @click="changeView('ContactPage')">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#">Cart</a></li>
-                        <li><p class="navbar-text">{{username}}</p></li>
+                        <li><a href="#" @click="changeView('CartPage')">Cart ({{quantity}})</a></li>
+                        <li><p class="navbar-text text-cursive">{{username}}</p></li>
+                        <li><a href="#">Logout</a></li>
                     </ul>
                 </div>
             </div>
@@ -34,10 +35,17 @@
             changeView: 'changeView'
         }),
         computed: mapGetters({
-            username: 'username'
+            username: 'username',
+            quantity: 'quantity'
         }),
         created: function () {
 
         }
     }
 </script>
+
+<style>
+    .text-cursive {
+        font-style: italic;
+    }
+</style>

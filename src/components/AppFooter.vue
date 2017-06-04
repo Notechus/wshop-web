@@ -1,6 +1,6 @@
 <template>
     <footer id="footer">
-        WShop ® Sebastian Paulus 2017
+        WShop ® 2017 Sebastian Paulus
     </footer>
 </template>
 

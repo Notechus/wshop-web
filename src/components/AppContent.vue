@@ -12,6 +12,7 @@
     import NewsPage from "./pages/NewsPage.vue";
     import ProductsPage from "./pages/ProductsPage.vue";
     import ContactPage from "./pages/ContactPage.vue";
+    import CartPage from './pages/CartPage.vue';
     import {store} from './../stores/store.js';
     import {mapState, mapGetters, mapMutations} from 'vuex';
 
@@ -19,7 +20,8 @@
         components: {
             NewsPage,
             ProductsPage,
-            ContactPage
+            ContactPage,
+            CartPage
         },
         computed: mapGetters({
             currentView: 'currentView'

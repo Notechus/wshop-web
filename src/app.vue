@@ -19,7 +19,6 @@
             AppHeader,
             AppContent,
             AppFooter
-        },
-        computed: mapGetters({})
+        }
     }
 </script>
