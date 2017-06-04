@@ -1,17 +1,25 @@
 <template>
-    <div id="products-page" class="row">
-        <product-thumbnail title="Apple iPhone SE" details="asdf"></product-thumbnail>
-        <product-thumbnail title="xxxxdsa" details="asdf"></product-thumbnail>
-        <product-thumbnail title="a" details="asdf"></product-thumbnail>
+    <div>
+        <div id="products-page" class="row">
+            <category-list></category-list>
+            <product-list></product-list>
+        </div>
+        <div id="filter-list" class="row">
+            <filter-list></filter-list>
+        </div>
     </div>
 </template>
 
 <script>
-    import ProductThumbnail from './../products/ProductThumbnail.vue';
+    import CategoryList from './../products/CategoryList.vue';
+    import ProductList from './../products/ProductList.vue';
+    import FilterList from './../products/FilterList.vue';
 
     export default {
         components: {
-            ProductThumbnail
+            CategoryList,
+            ProductList,
+            FilterList
         },
         created: function () {
 

@@ -15,7 +15,7 @@
                         <li><a href="#" @click="changeView('ContactPage')">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
-                        <li><a href="#" @click="changeView('CartPage')">Cart ({{quantity}})</a></li>
+                        <li><a href="#" @click="changeView('CartPage')">Cart (${{totalPrice}})</a></li>
                         <li><p class="navbar-text text-cursive">{{username}}</p></li>
                         <li><a href="#">Logout</a></li>
                     </ul>
@@ -36,7 +36,8 @@
         }),
         computed: mapGetters({
             username: 'username',
-            quantity: 'quantity'
+            quantity: 'quantity',
+            totalPrice: 'totalPrice'
         }),
         created: function () {
 

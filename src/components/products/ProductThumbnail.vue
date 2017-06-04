@@ -18,7 +18,6 @@
     import {mapState, mapGetters, mapMutations} from 'vuex';
 
     export default {
-        props: ['title', 'details'],
         components: {},
         methods: mapMutations({
             addToCart: 'addToCart'
@@ -26,8 +25,8 @@
         created: function () {
 
         },
-//        data: function () {
-//            return {title: 'asd', details: 'some details about product'};
-//        }
+        data: function () {
+            return {title: 'Apple iPhone SE', details: 'some details about product'};
+        }
     }
 </script>
