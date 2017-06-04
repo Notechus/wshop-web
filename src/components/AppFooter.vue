@@ -1,8 +1,7 @@
 <template>
-    <div>
-        <button>X</button>
-        Abcd
-    </div>
+    <footer id="footer">
+        WShop ® Sebastian Paulus 2017
+    </footer>
 </template>
 
 <script>
@@ -13,3 +12,19 @@
         }
     }
 </script>
+
+<style>
+    #footer {
+        position: relative;
+        left: 0;
+        bottom: 0;
+        height: 30px;
+        width: 100%;
+        /*background: #dcdcdc;*/
+        border-top: 1px solid;
+        text-align: center;
+        margin-top: 25px;
+        padding-bottom: 15px;
+        padding-top: 15px;
+    }
+</style>

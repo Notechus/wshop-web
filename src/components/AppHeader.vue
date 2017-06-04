@@ -2,33 +2,40 @@
     <div>
         <nav class="navbar navbar-default">
             <div class="container-fluid">
-                <!-- Brand and toggle get grouped for better mobile display -->
                 <div class="navbar-header">
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
                     <a class="navbar-brand" href="#">WShop</a>
                 </div>
-                <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse">
                     <ul class="nav navbar-nav navbar-left">
-                        <li class="active"><a href="#">News</a></li>
-                        <li><a href="#">Products</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" @click="changeView('NewsPage')">News</a></li>
+                        <li><a href="#" @click="changeView('ProductsPage')">Products</a></li>
+                        <li><a href="#" @click="changeView('ContactPage')">Contact</a></li>
                     </ul>
                     <ul class="nav navbar-nav navbar-right">
                         <li><a href="#">Cart</a></li>
+                        <li><p class="navbar-text">{{username}}</p></li>
                     </ul>
                 </div>
-            </div><!-- /.container-fluid -->
+            </div>
         </nav>
     </div>
 </template>
 
 <script>
+    import {store} from './../stores/store.js';
+    import {mapState, mapGetters, mapMutations} from 'vuex';
 
     export default {
         components: {},
+        methods: mapMutations({
+            changeView: 'changeView'
+        }),
+        computed: mapGetters({
+            username: 'username'
+        }),
         created: function () {
 
         }

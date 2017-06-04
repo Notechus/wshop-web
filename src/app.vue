@@ -1,7 +1,7 @@
 <template>
-    <div class="container-fluid">
+    <div class="container">
         <app-header></app-header>
-        <content></content>
+        <app-content></app-content>
         <app-footer></app-footer>
     </div>
 </template>
@@ -9,6 +9,7 @@
 <script>
     import AppHeader from './components/AppHeader.vue';
     import AppFooter from './components/AppFooter.vue';
+    import AppContent from './components/AppContent.vue';
     import {store} from './stores/store.js';
     import {mapGetters, mapMutations} from 'vuex';
 
@@ -16,7 +17,7 @@
         replace: false,
         components: {
             AppHeader,
-//            Content,
+            AppContent,
             AppFooter
         },
         computed: mapGetters({})

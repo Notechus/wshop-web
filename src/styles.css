@@ -1,6 +1,14 @@
 /* Space out content a bit */
 body {
-  padding-top: 20px;
-  padding-bottom: 20px;
-  background-color: rgba(226, 226, 226, 0.7);
+    padding-top: 20px;
+    /*padding-bottom: 20px;*/
+    /*background-color: rgba(226, 226, 226, 0.7);*/
+}
+
+.fade-enter-active, .fade-leave-active {
+    transition: opacity .5s
+}
+
+.fade-enter, .fade-leave-to {
+    opacity: 0
 }
