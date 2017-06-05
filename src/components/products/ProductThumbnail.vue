@@ -1,7 +1,8 @@
 <template>
     <div class="col-sm-6 col-md-4">
         <div class="thumbnail">
-            <img src="" alt="...">
+            <img src="https://cdn.x-kom.pl/i/setup/images/prod/big/product-medium,apple-iphone-se-32gb-gold-356911,pr_2016_3_25_15_19_35_14.jpg"
+                 alt="...">
             <div class="caption">
                 <h3>{{title}}</h3>
                 <p>{{details}}</p>
