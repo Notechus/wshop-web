@@ -1,5 +1,9 @@
 <template>
     <section class="row">
+        <header class="col-xs-12">
+            <h3>Contact</h3>
+            <hr class="line">
+        </header>
         <div class="col-md-4">
             <p>
                 <b>Wshop - internet smartphone shop</b>
